@@ -66,11 +66,9 @@ const NewsTextParagraf = styled.p`
 const ReadMoreBtn = styled.button`
   margin-top: -80px;
   font-size: 20px;
-  width: 160px;
   height: 45px;
   border-radius: 15px;
   border: none;
   background-color: #43a7f5;
   color: white;
-  margin-left: 15%;
 `

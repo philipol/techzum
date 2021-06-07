@@ -6,12 +6,12 @@ export default function IndexServices() {
     <ServiceWrapper>
       <ServiceHeading>Vad gör vi</ServiceHeading>
       <ServiceList>
-        <ListItem>Webbutveckling</ListItem>
-        <ListItem>Marknadsföring</ListItem>
-        <ListItem>Sociala medier</ListItem>
-        <ListItem>Design</ListItem>
-        <ListItem>System</ListItem>
-        <ListItem>Konsulting</ListItem>
+        <ListButton onClick={() => alert("webbutveckling klickad på!")}><ListItem>Webbutveckling</ListItem></ListButton>
+        <ListButton onClick={() => alert("Marknadsföring klickad på!")}><ListItem>Marknadsföring</ListItem></ListButton>
+        <ListButton onClick={() => alert("Socialamedier klickad på!")}><ListItem>Sociala medier</ListItem></ListButton>
+        <ListButton onClick={() => alert("Design klickad på!")}><ListItem>Design</ListItem></ListButton>
+        <ListButton onClick={() => alert("System klickad på!")}><ListItem>System</ListItem></ListButton>
+        <ListButton onClick={() => alert("Konsulting klickad på!")}><ListItem>Konsulting</ListItem></ListButton>
       </ServiceList>
     </ServiceWrapper>
   )
@@ -22,7 +22,7 @@ const ServiceWrapper = styled.div`
   grid-template-rows: auto 1fr;
   place-items: center;
   background-color: #000510;
-  min-height: 60vh;
+  min-height: 53vh;
   max-height: auto;
   width: 100;
   color: white;
@@ -31,7 +31,7 @@ const ServiceWrapper = styled.div`
 
 const ServiceHeading = styled.h2`
   font-size: 36px;
-  margin-top: 36px;
+  margin-top: 0;
 `
 
 const ServiceList = styled.ul`
@@ -41,6 +41,16 @@ const ServiceList = styled.ul`
 `
 
 const ListItem = styled.li`
-  height: 50px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-size: 18px;
+`
+
+const ListButton = styled.button`
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  color: white;
+  border: none;
   border-top: 2px solid white;
 `

@@ -9,7 +9,7 @@ const Header = () => {
     <MainHeader>
       <LogoWrapper>
         <Link to={"/"}>
-          <Mainlogo src={Logo} alt="Digizum Logo"/>
+          <Mainlogo src={Logo} alt="TechZum Logo"/>
         </Link>
       </LogoWrapper>
       <Navigation/>

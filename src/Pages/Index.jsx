@@ -12,8 +12,8 @@ import IndexQuote from '../Components/IndexQuote';
 export default function Index() {
   return (
     <MainLayout>
-      <HeroImage src={HeroImg} alt="Digizum index hero img"/>
-      <HeroImageOverlay src={HeroImgOverlay} alt="Digizum index hero img"/>
+      <HeroImage src={HeroImg} alt="TezhZum index hero img"/>
+      <HeroImageOverlay src={HeroImgOverlay} alt="TechZum index hero img"/>
       <DarkOverlay></DarkOverlay>
       <IndexHero/>
       <IndexAbout/>

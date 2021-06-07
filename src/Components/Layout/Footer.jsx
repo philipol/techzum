@@ -5,7 +5,7 @@ export default function Footer() {
   const [footerText, setFooterText] = useState('\u00A9')
 
   async function setCompanyName() {
-    const companyName = "Digizum AB"
+    const companyName = "TechZum AB"
     const date = new Date();
     const year = date.getFullYear();
     setFooterText("\u00A9" + "Copyright " + year + " - " + companyName)
@@ -17,7 +17,7 @@ export default function Footer() {
     <FooterWrapper>
       <ContactInfoWrapper>
         <h2>Kontakt</h2>
-        <a href="/">info@digizum.com</a>
+        <a href="/">info@techzum.com</a>
       </ContactInfoWrapper>
       <SocialMediaWrapper>
         <h2>Håll dig uppdaterad</h2>
@@ -37,7 +37,7 @@ export default function Footer() {
       <ContactWrapper>
         <h2>Ska vi kontakta dig?</h2>
         <label htmlFor="">Email:</label><br/>
-        <input type="text"/><br/>
+        <input style={{paddingLeft: "1%"}} type="text" placeholder="Skriv din E-postadress här!"/><br/>
         <button>Skicka</button>
       </ContactWrapper>
       <PoweredByWrapper>

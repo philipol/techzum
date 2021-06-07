@@ -17,7 +17,7 @@ export default function Navigation() {
 
 const NavWrapper = styled.div`
   grid-column: 2;
-  display: grid;
+  display: none;
   place-items: center;
 `
 const Nav = styled.nav `

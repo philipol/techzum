@@ -13,8 +13,8 @@ export default function IndexAbout() {
           att synas digitalt
         </AboutHeading>
         <AboutParagraf>
-          Välkommen till oss på Digizum. Vi är ett företag 
-          som hjälper andra företag små som stora att synas på. 
+          Välkommen till oss på TechZum. Vi är ett företag 
+          som hjälper andra företag små som stora att synas på internet. 
           Helheten av alla tjänster vi erbjuder ger er den 
           optimala verkningsgraden för att syns på internet.
         </AboutParagraf>
@@ -28,7 +28,7 @@ const IndexAboutWrapper = styled.div`
   grid-template-rows: 1fr auto 1fr;
   grid-template-columns: 1fr auto 1fr;
   place-items: center;
-  height: 80vh;
+  height: 50vh;
   max-width: 100vw;
 `
 
@@ -62,6 +62,7 @@ const AboutTextWrapper = styled.div`
 
 const AboutHeading = styled.h2`
   font-size: 36px;
+  margin-bottom: 0;
 `
 
 const AboutParagraf = styled.p`

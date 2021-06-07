@@ -4,8 +4,8 @@ import styled from "styled-components";
 export default function IndexQuote() {
   return (
     <QuoteWrapper>
-      <QuoteText><QuoteMark>"</QuoteMark>Med våra tekniker</QuoteText>
-      <QuoteText>får vi er att synas<QuoteMark>"</QuoteMark></QuoteText>
+      <QuoteTextLeft><QuoteMark>"</QuoteMark>Med våra tekniker</QuoteTextLeft>
+      <QuoteTextRight>får vi er att synas<QuoteMark>"</QuoteMark></QuoteTextRight>
     </QuoteWrapper>
   )
 }
@@ -17,9 +17,18 @@ const QuoteWrapper = styled.div`
   padding: 10%;
 `
 
-const QuoteText = styled.h2`
+const QuoteTextLeft = styled.h2`
   color: white;
   margin: 0;
+  margin-left: -30%;
+  margin-bottom: -5%;
+`
+
+const QuoteTextRight = styled.h2`
+  color: white;
+  margin: 0;
+  margin-top: -10%;
+  margin-right: -30%;
 `
 
 const QuoteMark = styled.span`
