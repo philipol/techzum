@@ -8,7 +8,7 @@ export default function Footer() {
     const companyName = "Digizum AB"
     const date = new Date();
     const year = date.getFullYear();
-    setFooterText('\u00A9' + "Copyright " + year +" - "+ companyName)
+    setFooterText("\u00A9" + "Copyright " + year + " - " + companyName)
   }
   useEffect(() => { 
     setCompanyName()

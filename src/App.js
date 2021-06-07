@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-import logo from './Assets/Img/digizumLogo.png'
-import './App.css';
-=======
-import "./App.css";
 import Index from "./Pages/Index";
 import Services from "./Pages/Services";
 import { Route } from "react-router-dom";
->>>>>>> feature/import_code
+import "./App.css";
 
 function App() {
   return (
