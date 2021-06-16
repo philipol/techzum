@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto-Regular, HelveticaNeue, Arial, sans-serif;
+}
+
+#cardContainer {
+  position: relative;
+  height: 100px;
+  transform-origin: bottom;
+  margin: 20px 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#firstDisplay {
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 18px 23px;
+  flex-wrap: wrap;
+  backface-visibility: hidden;
+  box-shadow: 0px 0px 25px -1px rgba(0, 0, 0, 0.17);
+}
+
+.cardWrapper {
+  background-color: #010410;
+  padding: 10%;
+  h2 {
+    width: 100%;
+    margin-top: 55px;
+  }
+}
+.cardWrapper:nth-child(odd) {
+  background-color: #fff;
+  .servicesImgWrapper {
+    grid-column: 2;
+  }
+  .bigServiceImg {
+    margin-right: 10%;
+    margin-left: 0;
+  }
+  .smallServiceImg {
+    transform: translate(200%, -75px);
+  }
+  h2 {
+    color: #010410;
+  }
+  p {
+    color: #010410;
+  }
+}
+
+.servicesImgWrapper {
+  grid-column: 1;
+}
+
+.bigServiceImg {
+  width: 90%;
+  margin-left: 10%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.smallServiceImg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  z-index: 1;
+  transform: translate(0%, -75px);
+}
+
+.customModal {
+  border-radius: 6px;
+  background-image: url(../Img/contactImg.jpg);
+}
+
+.react-responsive-modal-closeButton {
+  background: #fff;
+  border-radius: 6px;
+}
+
+@media (min-width: 780px) {
+  .servicesHeading {
+    margin-top: 0 !important;
+  }
+  .bigServiceImg {
+    min-height: 300px;
+  }
+  .smallServiceImg {
+    display: none;
+  }
+}
+@media (max-width: 1600px) {
+  .card-container {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .titelLink::after {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+  }
+
+  .titelLink:hover::after {
+    width: 100%;
+  }
+
+  .titelLink:hover {
+    color: #43a7f5;
+  }
+}

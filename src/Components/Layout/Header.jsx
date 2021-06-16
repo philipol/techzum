@@ -1,45 +1,47 @@
-import React from 'react'
-import Logo from '../../Assets/Img/digizumLogo.png'
+import React from "react";
+import Logo from "../../Assets/Img/Logos/logoWhiteBlue.png";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import Navigation from './Navigation';
+import Navigation from "./Navigation";
 
 const Header = () => {
   return (
     <MainHeader>
       <LogoWrapper>
-        <Link to={"/"}>
-          <Mainlogo src={Logo} alt="TechZum Logo"/>
+        <Link to={"/"} target="_top">
+          <Mainlogo src={Logo} alt="TechZum Logo" />
         </Link>
       </LogoWrapper>
-      <Navigation/>
+      <Navigation />
     </MainHeader>
-  )
-}
-export default Header
+  );
+};
+export default Header;
 
-const MainHeader = styled.header `
+const MainHeader = styled.header`
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr auto 1fr;
   width: 100%;
   height: 75px;
   background-color: white;
   position: fixed;
   z-index: 11;
   place-items: center;
-`
+  @media (min-width: 700px) {
+    height: 90px;
+  }
+`;
 
-const LogoWrapper = styled.div `
-  grid-column: 1;
-  width: 350px;
-  height: auto;
-`
-const Mainlogo = styled.img `
+const LogoWrapper = styled.div`
+  grid-column: 2;
+  grid-row: 1;
   display: grid;
   place-items: center;
+  height: auto;
+`;
+const Mainlogo = styled.img`
   height: 65px;
-  color: white;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-left: 10%;
-`
+  @media (min-width: 700px) {
+    height: 75px;
+  }
+`;

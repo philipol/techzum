@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto-Regular, HelveticaNeue, Arial, sans-serif;
+}
+
+#cardContainer {
+  position: relative;
+  height: 100px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  margin: 20px 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#firstDisplay {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 18px 23px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-box-shadow: 0px 0px 25px -1px rgba(0, 0, 0, 0.17);
+          box-shadow: 0px 0px 25px -1px rgba(0, 0, 0, 0.17);
+}
+
+.cardWrapper {
+  background-color: #010410;
+  padding: 10%;
+}
+
+.cardWrapper h2 {
+  width: 100%;
+  margin-top: 55px;
+}
+
+.cardWrapper:nth-child(odd) {
+  background-color: #fff;
+}
+
+.cardWrapper:nth-child(odd) .servicesImgWrapper {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.cardWrapper:nth-child(odd) .bigServiceImg {
+  margin-right: 10%;
+  margin-left: 0;
+}
+
+.cardWrapper:nth-child(odd) .smallServiceImg {
+  -webkit-transform: translate(200%, -75px);
+          transform: translate(200%, -75px);
+}
+
+.cardWrapper:nth-child(odd) h2 {
+  color: #010410;
+}
+
+.cardWrapper:nth-child(odd) p {
+  color: #010410;
+}
+
+.servicesImgWrapper {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.bigServiceImg {
+  width: 90%;
+  margin-left: 10%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+
+.smallServiceImg {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  z-index: 1;
+  -webkit-transform: translate(0%, -75px);
+          transform: translate(0%, -75px);
+}
+
+.customModal {
+  border-radius: 6px;
+  background-image: url(../Img/contactImg.jpg);
+}
+
+.react-responsive-modal-closeButton {
+  background: #fff;
+  border-radius: 6px;
+}
+
+@media (min-width: 780px) {
+  .servicesHeading {
+    margin-top: 0 !important;
+  }
+  .bigServiceImg {
+    min-height: 300px;
+  }
+  .smallServiceImg {
+    display: none;
+  }
+}
+
+@media (max-width: 1600px) {
+  .card-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .titelLink::after {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .titelLink:hover::after {
+    width: 100%;
+  }
+  .titelLink:hover {
+    color: #43a7f5;
+  }
+}
+/*# sourceMappingURL=overall.css.map */
