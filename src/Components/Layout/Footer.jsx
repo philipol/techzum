@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { socialIcons } from "./navData";
+import { socialIcons } from "../../Data/navData";
 
 export default function Footer() {
   const [footerText, setFooterText] = useState("\u00A9");
@@ -31,6 +31,7 @@ export default function Footer() {
               href={item.url}
               key={index}
               target="_blank"
+              rel="noreferrer"
               style={{ textDecoration: "none" }}
             >
               <h3 style={{ marginTop: "10px" }}>

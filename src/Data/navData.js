@@ -1,10 +1,10 @@
 import React from "react";
-import devImg from "../../Assets/Img/development.jpg";
-import marketImg from "../../Assets/Img/marketing.jpg";
-import systemImg from "../../Assets/Img/system.jpg";
-import socialImg from "../../Assets/Img/social.jpg";
-import designImg from "../../Assets/Img/design.jpg";
-import consultingImg from "../../Assets/Img/consulting.jpg";
+import devImg from "../Assets/Img/development.jpg";
+import marketImg from "../Assets/Img/marketing.jpg";
+import systemImg from "../Assets/Img/system.jpg";
+import socialImg from "../Assets/Img/social.jpg";
+import designImg from "../Assets/Img/design.jpg";
+import consultingImg from "../Assets/Img/consulting.jpg";
 import * as FcIcons from "react-icons/fc";
 import * as AiIcons from "react-icons/ai";
 import * as VrsIcons from "react-icons/vsc";

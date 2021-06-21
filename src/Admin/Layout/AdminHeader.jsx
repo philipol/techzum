@@ -8,7 +8,7 @@ const AdminHeader = () => {
   return (
     <MainHeader>
       <LogoWrapper>
-        <Link to={"/"} target="_top">
+        <Link to={"/Admin"} target="_top">
           <Mainlogo src={AdminLogo} alt="TechZum admin Logo" />
         </Link>
       </LogoWrapper>

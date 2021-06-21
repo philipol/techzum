@@ -2,7 +2,7 @@ import React, { useState, useCallback } from "react";
 import styled from "styled-components";
 import "../../Assets/Styles/layout.css";
 import { Link } from "react-router-dom";
-import navbarData from "./navData";
+import navbarData from "../../Data/navData";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 import ContactForm from "../Form/ContactForm";

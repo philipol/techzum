@@ -33,3 +33,52 @@ let companyOperation = companyOperations[companyNumber].firstChild.textContent
 companyOperationData.push(companyOperation)
 }
 console.log(companyOperationData)
+
+kommuner: {
+ale: {
+name: ale,
+bolag: {
+aleBygg_AB: {
+name: aleBygg_AB,
+orgNr: 123455678-3333,
+email: alebygg@alebygg.se,
+phone: 072-2345678,
+linkedIn: aleBygg,
+webbsida: alebygg.se | null
+status: "pågående" | "nekad" | "godkänd" | "ej svarat"
+}
+aleMat_AB: {
+name: aleMat_AB,
+orgNr: 123455678-3333,
+email: aleMat@alemat.se,
+phone: 072-2345678,
+linkedIn: aleMat,
+webbsida: alemat.se | null
+status: "pågående" | "nekad" | "godkänd" | "ej svarat"
+}
+}
+}
+alingsås: {
+name: Alingsås,
+bolag: {
+alingsåsBygg_AB: {
+name: AlinsåsBygg_AB,
+orgNr: 123455678-3333,
+email: alebygg@alebygg.se,
+phone: 072-2345678,
+linkedIn: aleBygg,
+webbsida: alebygg.se | null
+status: "pågående" | "nekad" | "godkänd" | "ej svarat"
+}
+aleMat_AB: {
+name: aleMat_AB,
+orgNr: 123455678-3333,
+email: aleMat@alemat.se,
+phone: 072-2345678,
+linkedIn: aleMat,
+webbsida: alemat.se | null
+status: "pågående" | "nekad" | "godkänd" | "ej svarat"
+}
+}
+}
+}

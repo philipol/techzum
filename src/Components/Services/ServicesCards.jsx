@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from "react";
 import styled from "styled-components";
 import "../../Assets/Styles/overall.css";
-import { dataServices } from "../Layout/navData";
+import { dataServices } from "../../Data/navData";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 import ContactForm from "../Form/ContactForm";

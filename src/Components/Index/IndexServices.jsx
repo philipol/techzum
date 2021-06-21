@@ -2,7 +2,7 @@ import React from "react";
 import "../../Assets/Styles/overall.css";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { dataServices } from "../Layout/navData";
+import { dataServices } from "../../Data/navData";
 
 const IndexServices = () => {
   const DataArr = Array(6).fill(0).map(Number.call, Number);

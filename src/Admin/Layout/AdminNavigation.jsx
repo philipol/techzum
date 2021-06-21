@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import "../../Assets/Styles/layout.css";
 import { Link } from "react-router-dom";
-import { adminServices } from "../../Components/Layout/navData";
+import { adminServices } from "../../Data/navData";
 import "react-responsive-modal/styles.css";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
