@@ -1,5 +1,5 @@
 import React from "react";
-import AdminLogo from "../../Assets/Img/Logos/AdminLogoBlackBlue.png";
+import AdminLogo from "../../Components/Assets/Img/Logos/AdminLogoBlackBlue.png";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Navigation from "./AdminNavigation";

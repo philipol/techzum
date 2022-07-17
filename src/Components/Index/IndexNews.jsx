@@ -1,26 +1,23 @@
-import React from 'react'
+import React from "react";
 import styled from "styled-components";
-import NewsImg from "../../Assets/Img/news.jpg"
+import NewsImg from "../../Components/Assets/Img/news.jpg";
 
 export default function IndexNews() {
   return (
     <NewsWrapper>
       <NewsHeading>Det här kan vara bra att veta</NewsHeading>
-      <NewsImage src={NewsImg} alt=""/>
+      <NewsImage src={NewsImg} alt="" />
       <NewsTextOverlay>
-        <NewsTextHeader>
-          SEO
-        </NewsTextHeader>
+        <NewsTextHeader>SEO</NewsTextHeader>
         <NewsTextParagraf>
-          För att ranka bra och synas i sökmotorer behöver 
-          man arbeta med  - sökmotoroptimering. 
-          Att kontinuerligt arbeta med innehåll och 
-          nyckelord känner många företag redan till. 
+          För att ranka bra och synas i sökmotorer behöver man arbeta med -
+          sökmotoroptimering. Att kontinuerligt arbeta med innehåll och
+          nyckelord känner många företag redan till.
         </NewsTextParagraf>
       </NewsTextOverlay>
       <ReadMoreBtn>Jag vill vet mer</ReadMoreBtn>
     </NewsWrapper>
-  )
+  );
 }
 
 const NewsWrapper = styled.div`
@@ -31,18 +28,18 @@ const NewsWrapper = styled.div`
   color: black;
   background-color: white;
   text-align: center;
-`
+`;
 
 const NewsHeading = styled.h2`
   font-size: 36px;
   margin-top: 10px;
-`
+`;
 
 const NewsImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-`
+`;
 
 const NewsTextOverlay = styled.div`
   width: 70%;
@@ -53,15 +50,11 @@ const NewsTextOverlay = styled.div`
   padding-bottom: 0;
   text-align: left;
   overflow: hidden;
-`
+`;
 
-const NewsTextHeader = styled.h3`
+const NewsTextHeader = styled.h3``;
 
-`
-
-const NewsTextParagraf = styled.p`
-
-`
+const NewsTextParagraf = styled.p``;
 
 const ReadMoreBtn = styled.button`
   margin-top: -50px;
@@ -71,4 +64,4 @@ const ReadMoreBtn = styled.button`
   border: none;
   background-color: #43a7f5;
   color: white;
-`
+`;

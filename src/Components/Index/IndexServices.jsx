@@ -1,11 +1,11 @@
 import React from "react";
-import "../../Assets/Styles/overall.css";
+import "../../Components/Assets/Styles/overall.css";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { dataServices } from "../../Data/navData";
 
 const IndexServices = () => {
-  const DataArr = Array(6).fill(0).map(Number.call, Number);
+  const DataArr = Array(4).fill(0).map(Number.call, Number);
 
   const Cell = (props) => {
     const { index } = props;
@@ -78,7 +78,6 @@ const ServiceList = styled.ul`
   @media screen and (min-width: 1225px) {
     display: grid;
     gap: 5%;
-    grid-template-columns: 1fr 1fr 1fr;
   }
 `;
 

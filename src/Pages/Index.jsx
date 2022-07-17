@@ -3,7 +3,7 @@ import styled from "styled-components";
 import IndexHero from "../Components/Index/IndexHero";
 import IndexAbout from "../Components/Index/IndexAbout";
 import MainLayout from "../Components/Layout/MainLayout";
-import HeroImgOverlay from "../Assets/Img/HeroImgOverlay.jpg";
+import HeroImgOverlay from "../Components/Assets/Img/HeroImgOverlay.jpg";
 import IndexServices from "../Components/Index/IndexServices";
 import IndexNews from "../Components/Index/IndexNews";
 import IndexQuote from "../Components/Index/IndexQuote";

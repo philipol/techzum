@@ -1,5 +1,5 @@
 import React from "react";
-import Icon from "../../Assets/Img/Logos/iconWhiteBlack.png";
+import Icon from "../../Components/Assets/Img/Logos/iconWhiteBlack.png";
 import styled from "styled-components";
 
 export default function AboutServices() {

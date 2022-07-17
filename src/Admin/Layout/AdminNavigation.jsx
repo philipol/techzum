@@ -1,18 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import "../../Assets/Styles/layout.css";
+import "../../Components/Assets/Styles/layout.css";
 import { Link } from "react-router-dom";
 import { adminServices } from "../../Data/navData";
 import "react-responsive-modal/styles.css";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
+import { CheckAuth } from "../Components/Auth";
 
 export default function AdminNavigation() {
+  const [auth, setAuth] = useState();
   const [sidebar, setSidebar] = useState(false);
-
   const sidebarState = () => setSidebar(!sidebar);
 
-  return (
+  useEffect(() => {
+    const authState = CheckAuth();
+    if (authState === true) {
+      setAuth(true);
+    }
+  }, []);
+  return auth ? (
     <NavWrapper>
       <Nav>
         <Link rel="stylesheet" to="#" className="menu-bars">
@@ -41,8 +48,27 @@ export default function AdminNavigation() {
               </li>
             );
           })}
+          <li key="logout" className="admin-nav-text">
+            <Link to="/login" target="_top">
+              <span
+                className="nav-title"
+                style={{ color: "#43a7f5" }}
+                onClick={() => localStorage.clear()}
+              >
+                Logga ut
+              </span>
+            </Link>
+          </li>
         </ul>
       </nav>
+    </NavWrapper>
+  ) : (
+    <NavWrapper>
+      <Nav>
+        <Link rel="stylesheet" to="#" className="menu-bars">
+          <FaIcons.FaBars onClick={sidebarState} style={{ color: "#43a7f5" }} />
+        </Link>
+      </Nav>
     </NavWrapper>
   );
 }

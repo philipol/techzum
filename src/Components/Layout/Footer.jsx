@@ -80,6 +80,9 @@ const ContactInfoWrapper = styled.div`
   a {
     color: white;
   }
+  h2 {
+    color: white;
+  }
   @media screen and (min-width: 780px) {
     padding: 7%;
     padding-left: 20%;
@@ -93,6 +96,7 @@ const SocialMediaWrapper = styled.div`
   padding-bottom: 0;
   h2 {
     margin: 0;
+    color: white;
   }
   h3 {
     color: white;
@@ -108,6 +112,7 @@ const ContactWrapper = styled.div`
   padding: 10%;
   h2 {
     margin-top: 0;
+    color: white;
   }
   label {
     font-weight: bold;

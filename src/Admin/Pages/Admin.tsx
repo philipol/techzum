@@ -1,38 +1,88 @@
 import React, { useState, useEffect } from "react";
-import * as Api from "../Components/Api";
+import { Link, useHistory } from "react-router-dom";
+import "antd/dist/antd.css";
+import { Table, Space } from "antd";
 import AdminLayout from "../Layout/AdminLayout";
 import { kommuner } from "../../Data/communeData";
+import { CheckAuth } from "../Components/Auth";
 
 export default function Admin() {
-  console.log(kommuner);
-  const [data, setData] = useState([]);
-  const [commune, setCommune] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  const memoizedGetData = () => {
-    const fetchData = async () => {
-      try {
-        const offers = await Api.GetData("kommuner.json");
-        setData(offers);
-        setLoading(false);
-      } catch (err) {
-        setError(err);
-      }
-    };
-    fetchData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  };
+  const history = useHistory();
 
   useEffect(() => {
-    memoizedGetData();
+    const authState = CheckAuth();
+    if (authState === false) {
+      history.push({ pathname: "/login" });
+    }
   }, []);
+  const [commune, setCommune] = useState<any>();
+  const [loading, setLoading] = useState(true);
 
-  //data && console.log(data[120]);
-  /*data.map(function (communes, index) {
-      console.log(communes[index].name);
-    });*/
-
+  const columns = [
+    {
+      title: "Kommun",
+      dataIndex: "name",
+      key: "1",
+    },
+    {
+      title: "Kommun ID",
+      dataIndex: "id",
+      key: "2",
+    },
+    {
+      title: "Status",
+      dataIndex: "status",
+      key: "3",
+      filters: [
+        {
+          text: "Tomt",
+          value: "Tomt",
+        },
+        {
+          text: "Tillagd data",
+          value: "Tillagd data",
+        },
+      ],
+      onFilter: (value: any, data: any) => data.status.indexOf(value) === 0,
+    },
+    {
+      title: "Säljare",
+      dataIndex: "salesman",
+      key: "4",
+      filters: [
+        {
+          text: "Philip",
+          value: "Philip",
+        },
+        {
+          text: "Jesper",
+          value: "Jesper",
+        },
+        {
+          text: "Albin",
+          value: "Albin",
+        },
+        {
+          text: "Ingen tillagd",
+          value: "Ingen tillagd",
+        },
+      ],
+      onFilter: (value: any, data: any) => data.salesman.indexOf(value) === 0,
+    },
+    {
+      title: "Action",
+      key: "action",
+      render: (data: any) => (
+        <Space size="middle">
+          <Link to={`/admin/kommun/${data.id}`}>Öppna {data.name}</Link>
+        </Space>
+      ),
+    },
+  ];
+  useEffect(() => {
+    setCommune(kommuner);
+    setLoading(false);
+  });
   return loading ? (
     <h2>loading...</h2>
   ) : (
@@ -49,31 +99,7 @@ export default function Admin() {
         }}
       >
         <h1>Kommuner</h1>
-        {kommuner.map((data, index) => {
-          return (
-            <button
-              style={{
-                width: "100%",
-                height: "50px",
-                backgroundColor: "transparent",
-                borderRadius: "6px",
-                border: "2px solid gray",
-                cursor: "pointer",
-              }}
-              onClick={() =>
-                alert(
-                  `Hämta datan från kommunen ${data.name} med id ${data.id}`
-                )
-              }
-            >
-              <li key={index} style={{ listStyle: "none" }}>
-                <span className="nav-title" style={{ color: "#43a7f5" }}>
-                  {data.name}
-                </span>
-              </li>
-            </button>
-          );
-        })}
+        <Table bordered dataSource={commune} columns={columns}></Table>
       </div>
     </AdminLayout>
   );

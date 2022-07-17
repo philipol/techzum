@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import styled from "styled-components";
-import "../../Assets/Styles/layout.css";
+import "../../Components/Assets/Styles/layout.css";
 import { Link } from "react-router-dom";
 import navbarData from "../../Data/navData";
 import { Modal } from "react-responsive-modal";

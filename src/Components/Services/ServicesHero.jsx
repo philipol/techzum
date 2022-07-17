@@ -70,6 +70,7 @@ const IndexHeading = styled.h1`
   text-align: left;
   font-size: 40px;
   margin: 10px 0;
+  color: white;
   @media screen and (min-width: 700px) {
     font-size: 44px;
   }

@@ -71,6 +71,7 @@ const IndexHeroHeadingWrapper = styled.div`
 `;
 const IndexHeading = styled.h1`
   grid-row: 1;
+  color: white;
   text-align: left;
   width: 80%;
   font-size: 40px;
@@ -87,6 +88,7 @@ const IndexDescriber = styled.h2`
   width: 80%;
   font-weight: normal;
   font-size: 20px;
+  color: white;
   @media screen and (min-width: 700px) {
     font-size: 24px;
     margin: 10px 0;

@@ -4,7 +4,12 @@ import styled from "styled-components";
 export default function ContactForm() {
   return (
     <FormWrapper>
-      <Form action="/">
+      <Form
+        action="mailto:info@techzum.se"
+        method="POST"
+        enctype="multipart/form-data"
+        name="EmailForm"
+      >
         <h1>Kontakta oss!</h1>
         <InputWrappers>
           <Label htmlFor="name">Namn:</Label>

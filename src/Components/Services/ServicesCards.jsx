@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import styled from "styled-components";
-import "../../Assets/Styles/overall.css";
+import "../../Components/Assets/Styles/overall.css";
 import { dataServices } from "../../Data/navData";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
@@ -17,7 +17,7 @@ const ServicesCards = () => {
     setIsModalVisible(false);
   }, []);
 
-  const DataArr = Array(6).fill(0).map(Number.call, Number);
+  const DataArr = Array(4).fill(0).map(Number.call, Number);
 
   const Cell = (props) => {
     const { index } = props;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ServicesHero from "../Components/Services/ServicesHero";
 import AboutServices from "../Components/Services/AboutServices";
 import MainLayout from "../Components/Layout/MainLayout";
-import HeroImgOverlay from "../Assets/Img/indexHeroImage.jpg";
+import HeroImgOverlay from "../Components/Assets/Img/indexHeroImage.jpg";
 import ServicesCards from "../Components/Services/ServicesCards";
 import IndexNews from "../Components/Index/IndexNews";
 import ServicesQuote from "../Components/Services/ServicesQuote";

@@ -1,10 +1,10 @@
 import React from "react";
-import devImg from "../Assets/Img/development.jpg";
-import marketImg from "../Assets/Img/marketing.jpg";
-import systemImg from "../Assets/Img/system.jpg";
-import socialImg from "../Assets/Img/social.jpg";
-import designImg from "../Assets/Img/design.jpg";
-import consultingImg from "../Assets/Img/consulting.jpg";
+import devImg from "../Components/Assets/Img/development.jpg";
+import marketImg from "../Components/Assets/Img/marketing.jpg";
+import systemImg from "../Components/Assets/Img/system.jpg";
+import socialImg from "../Components/Assets/Img/social.jpg";
+import designImg from "../Components/Assets/Img/design.jpg";
+import consultingImg from "../Components/Assets/Img/consulting.jpg";
 import * as FcIcons from "react-icons/fc";
 import * as AiIcons from "react-icons/ai";
 import * as VrsIcons from "react-icons/vsc";
@@ -108,11 +108,10 @@ export const dataServices = [
     },
     them: "rgb(90, 5, 49)",
     label: "Webbutveckling",
-    text: `Vi tillhandahåller ett brett utbud avwebbutvecklingslösningar 
-      för att kunna hjälpa ditt företag framåt, medstor erfarenhet av att 
-      utveckla webbplatser åt en mängd olika branscheroch strategier som 
-      du kan lita på, kan du vara säker på att Norderbergsär rätt partner 
-      att utveckla din nästa eller uppdatera din befintliga hemsida.`,
+    text: `Vi erbjuder en mängd olika webblösningar. Vi hjälper er att uppdatera 
+      eran befintliga webbsida eller bygger nytt från grunden. Vi erbjuder allt från 
+      simpla webbsidor med 1 sida på till avancerade webbsidor som vi optimerar utifrån era behov.
+      Kontakta oss så återkommer vi med ett prisförslag och en plan som passar er!`,
   },
   {
     src: marketImg,
@@ -130,18 +129,15 @@ export const dataServices = [
     },
     them: "rgb(230, 26, 56)",
     label: "Marknadsföring",
-    text: `Vi marknadsför alla typer av företag, stora som små såatt 
-      du skall kunna nå din kundgrupp snabbare och billigare. 
-      Eftersom närvaron onlineär större än någonsin är det nu det 
-      bästa sättet att hitta dina kunder, därför läggervårt största fokus just här.
-       Några av dem trafik källorna vi jobbar mest med innefattar, 
-       Visnings annonser, video annonser, sökmotor annonsering, 
-       sociala medier. Denna typ av annonsering är kostnadseffektiv 
-       och du betalar endast efter resultat.Vi hjälper dig att ta fram 
-       allt nödvändigt material, optimera både kampanjerna efter hand 
-       och din hemsida dit vi skickar kunderna för bästa resultat.`,
+    text: `Vi marknadsför alla typer av företag, stora som små så att 
+      ni skall kunna nå er kundgrupp snabbare och billigare. 
+      Eftersom närvaron online är större än någonsin är det nu det 
+      bästa sättet att hitta dina kunder, därför fokuserar vi på det digitala.
+      Vi hjäper er att både annonser i video, bild och text format i digitala medier.
+      Denna typ av annonsering är kostnadseffektiv och ni betalar endast 
+      för de visningar ni får.`,
   },
-  {
+  /*{
     src: systemImg,
     style: {
       height: "25%",
@@ -183,7 +179,7 @@ export const dataServices = [
       målgrupp, varumärkesbyggande, Skapa trovärdighet, räckvidd - Nå 
       ut med kampanjer, generera leads, kundservice,omvärldsbevakning - 
       Vad sägs om dig? Vad sägs om ditt företag? Få snabb feedback från kunderna`,
-  },
+  },*/
   {
     src: designImg,
     style: {
@@ -200,10 +196,9 @@ export const dataServices = [
     },
     them: "rgb(252, 178, 50)",
     label: "Design",
-    text: `Oavsett om du behöver en ny design till en hemsida,produktvideo, 
-      animation eller en ny logotype med grafisk profil ellerbara annonsmaterial 
-      så finns vi här för att lösa det. Våra begåvade designersoch videoproducenter 
-      hjälper dig att visa din produkt eller företag i det bästa möjliga ljuset.`,
+    text: `Oavsett om det behövs en ny design till en hemsida, produktvideo, 
+      animation, logotyp eller annonsmaterial så finns vi här för att lösa det. 
+      Vi hjälper er att visa er produkt eller företag på bästa möjliga sätt.`,
   },
   {
     src: consultingImg,
@@ -221,7 +216,7 @@ export const dataServices = [
     },
     them: "rgb(252, 178, 50)",
     label: "Konsulting",
-    text: "Vi erbjuder även konsultarbete innom alla ovan tjänster.",
+    text: "Vi erbjuder även konsultarbete för mindre jobb innom alla ovan tjänster.",
   },
 ];
 
